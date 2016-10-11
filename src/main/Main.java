@@ -29,7 +29,7 @@ public class Main {
         Model_Volumen model_Volumen =  new Model_Volumen();
         Volumen volumen =  new Volumen();
         Controller_Volumen controller_Volumen = new Controller_Volumen(model_Volumen, volumen);
-        
+        // actualizacion
         JPanel  views[] = new JPanel [3];
         views [0] = area;
         views [1] = perimetro;
