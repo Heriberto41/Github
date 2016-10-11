@@ -39,7 +39,8 @@ public class Menu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMenu1.setText("Operaciones ");
+        jMenu1.setText("Elegir operaciones ");
+        jMenu1.setToolTipText("");
 
         jmArea.setText("Areas");
         jMenu1.add(jmArea);
