@@ -27,19 +27,98 @@ public class Area extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jt_Altura = new javax.swing.JTextField();
+        jt_Base = new javax.swing.JTextField();
+        jc_figura = new javax.swing.JComboBox<>();
+        jLabel3 = new javax.swing.JLabel();
+        jbtn_Calcular = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jtResultado = new javax.swing.JTextField();
+
+        jLabel1.setText("Altura");
+
+        jLabel2.setText("Base");
+
+        jt_Altura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jt_AlturaActionPerformed(evt);
+            }
+        });
+
+        jc_figura.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Rectangulo", "Triangulo", "Romboide" }));
+
+        jLabel3.setText("Figura");
+
+        jbtn_Calcular.setText("Calcular");
+
+        jLabel4.setText("Resultado");
+
+        jtResultado.setEditable(false);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(322, Short.MAX_VALUE)
+                .addComponent(jbtn_Calcular)
+                .addGap(260, 260, 260))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(111, 111, 111)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4))
+                .addGap(29, 29, 29)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jc_figura, 0, 219, Short.MAX_VALUE)
+                    .addComponent(jt_Altura)
+                    .addComponent(jt_Base)
+                    .addComponent(jtResultado))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(117, 117, 117)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jc_figura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jt_Altura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jt_Base, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jtResultado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addComponent(jbtn_Calcular)
+                .addContainerGap(99, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jt_AlturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_AlturaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jt_AlturaActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    public javax.swing.JButton jbtn_Calcular;
+    public javax.swing.JComboBox<String> jc_figura;
+    public javax.swing.JTextField jtResultado;
+    public javax.swing.JTextField jt_Altura;
+    public javax.swing.JTextField jt_Base;
     // End of variables declaration//GEN-END:variables
 }

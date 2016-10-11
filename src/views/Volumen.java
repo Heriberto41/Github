@@ -27,19 +27,113 @@ public class Volumen extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jl_Basemayor = new javax.swing.JLabel();
+        jl_Basemenor = new javax.swing.JLabel();
+        jl_Altura = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jtx_Basemayor = new javax.swing.JTextField();
+        jtx_Basemenor = new javax.swing.JTextField();
+        jtx_Altura = new javax.swing.JTextField();
+        jtx_Resultado = new javax.swing.JTextField();
+        jbtn_Calcular = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jc_Figura = new javax.swing.JComboBox<>();
+
+        jl_Basemayor.setText("Base mayor");
+
+        jl_Basemenor.setText("Base menor");
+
+        jl_Altura.setText("Altura");
+
+        jLabel4.setText("Resutado");
+
+        jtx_Basemenor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtx_BasemenorActionPerformed(evt);
+            }
+        });
+
+        jtx_Resultado.setEditable(false);
+
+        jbtn_Calcular.setText("Clalcular");
+
+        jLabel5.setText("Figura");
+
+        jc_Figura.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Rectangulo", "Cuadrado", "Triangulo" }));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(343, 343, 343)
+                        .addComponent(jbtn_Calcular))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(113, 113, 113)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jl_Basemenor)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jl_Basemayor)
+                                    .addComponent(jl_Altura)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel5))
+                                .addGap(48, 48, 48)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jtx_Basemenor)
+                                    .addComponent(jtx_Basemayor)
+                                    .addComponent(jtx_Altura)
+                                    .addComponent(jtx_Resultado)
+                                    .addComponent(jc_Figura, 0, 207, Short.MAX_VALUE))))))
+                .addContainerGap(201, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(81, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jc_Figura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jl_Basemayor)
+                    .addComponent(jtx_Basemayor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jl_Basemenor)
+                    .addComponent(jtx_Basemenor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jl_Altura)
+                    .addComponent(jtx_Altura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jtx_Resultado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(42, 42, 42)
+                .addComponent(jbtn_Calcular)
+                .addGap(91, 91, 91))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jtx_BasemenorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtx_BasemenorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtx_BasemenorActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    public javax.swing.JButton jbtn_Calcular;
+    public javax.swing.JComboBox<String> jc_Figura;
+    public javax.swing.JLabel jl_Altura;
+    public javax.swing.JLabel jl_Basemayor;
+    public javax.swing.JLabel jl_Basemenor;
+    public javax.swing.JTextField jtx_Altura;
+    public javax.swing.JTextField jtx_Basemayor;
+    public javax.swing.JTextField jtx_Basemenor;
+    public javax.swing.JTextField jtx_Resultado;
     // End of variables declaration//GEN-END:variables
 }

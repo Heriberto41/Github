@@ -27,19 +27,109 @@ public class Perimetro extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jl_base = new javax.swing.JLabel();
+        jl_Altura = new javax.swing.JLabel();
+        jtResultado = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jc_figura = new javax.swing.JComboBox<>();
+        jt_Base = new javax.swing.JTextField();
+        jt_Altura = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jbtn_Calcular = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+
+        jl_base.setText("Base");
+
+        jl_Altura.setText("Altura");
+
+        jtResultado.setEditable(false);
+
+        jLabel3.setText("Figura");
+
+        jc_figura.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Rectangulo", "Triangulo", "Romboide" }));
+
+        jt_Altura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jt_AlturaActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setText("Resultado");
+
+        jbtn_Calcular.setText("Calcular");
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel1.setText("Calculo de perimetros");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(111, 111, 111)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jbtn_Calcular)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jl_Altura)
+                                    .addComponent(jl_base)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel4))
+                                .addGap(29, 29, 29)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jc_figura, 0, 219, Short.MAX_VALUE)
+                                    .addComponent(jt_Altura)
+                                    .addComponent(jt_Base)
+                                    .addComponent(jtResultado)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(134, 134, 134)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(174, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(47, 47, 47)
+                .addComponent(jLabel1)
+                .addGap(56, 56, 56)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jc_figura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jl_Altura)
+                    .addComponent(jt_Altura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jl_base)
+                    .addComponent(jt_Base, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jtResultado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(38, 38, 38)
+                .addComponent(jbtn_Calcular)
+                .addContainerGap(94, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jt_AlturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_AlturaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jt_AlturaActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    public javax.swing.JButton jbtn_Calcular;
+    public javax.swing.JComboBox<String> jc_figura;
+    public javax.swing.JLabel jl_Altura;
+    public javax.swing.JLabel jl_base;
+    public javax.swing.JTextField jtResultado;
+    public javax.swing.JTextField jt_Altura;
+    public javax.swing.JTextField jt_Base;
     // End of variables declaration//GEN-END:variables
 }
